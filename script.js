@@ -50,7 +50,6 @@ $(document).ready(function(){
 
     //VALID MOVE? xx, yy, xClicked, yClicked
     if((xx === xClicked || yy === yClicked) && (Math.abs(xx - xClicked) === 1 || Math.abs(yy - yClicked) === 1)) {
-      console.log("Valid.");
       x[xx][yy] = x[xClicked][yClicked];
       x[xClicked][yClicked] = 0;
 
@@ -67,8 +66,6 @@ $(document).ready(function(){
 
       xx = xClicked;
       yy = yClicked;
-    } else {
-      console.log(xx, xClicked, yy, yClicked);
     }
   });
 });
